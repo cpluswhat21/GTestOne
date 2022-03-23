@@ -33,14 +33,15 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\*test*.exe
-      !**\*TestAdapter.exe
+      **\*test*.dll
+      !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     codeCoverageEnabled: true
+    pathtoCustomTestAdapters: '$(Build.SourcesDirectory)\GTestAdapter'
 
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'VSTest'
-    testResultsFiles: '**/TEST-*.trx'
+    testResultsFiles: '**/*.trx'
