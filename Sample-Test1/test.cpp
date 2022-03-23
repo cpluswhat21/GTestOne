@@ -4,3 +4,8 @@ TEST(TestCaseName, FirstTest) {
   EXPECT_EQ(1, 1);
   EXPECT_TRUE(true);
 }
+
+TEST(TestCaseName, SecondTest) {
+	EXPECT_EQ(1, 1);
+	EXPECT_TRUE(true);
+}
