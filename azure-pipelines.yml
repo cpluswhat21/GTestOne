@@ -37,7 +37,8 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\*Sample-Test1*.dll
+      **\*test*.exe
+      !**\*Adapter*.exe
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     codeCoverageEnabled: true
