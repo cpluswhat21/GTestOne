@@ -25,6 +25,10 @@ steps:
     packageFeedSelector: 'nugetOrg'
     versionSelector: 'latestStable'
 
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
@@ -33,7 +37,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\*test*.dll
+      **\*Sample-Test1*.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     codeCoverageEnabled: true
