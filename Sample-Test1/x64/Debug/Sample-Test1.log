@@ -1,1 +1,4 @@
-﻿  Sample-Test1.vcxproj -> C:\Users\jhorns\source\repos\GTestOne\x64\Debug\Sample-Test1.dll
+﻿  pch.cpp
+  test.cpp
+  LINK : C:\Users\jhorns\source\repos\GTestOne\x64\Debug\Sample-Test1.exe not found or not built by the last incremental link; performing full link
+  Sample-Test1.vcxproj -> C:\Users\jhorns\source\repos\GTestOne\x64\Debug\Sample-Test1.exe
