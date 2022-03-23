@@ -41,7 +41,7 @@ steps:
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     codeCoverageEnabled: true
-    pathtoCustomTestAdapters: '$(System.DefaultWorkingDirectory)\GTestAdapter'
+    pathtoCustomTestAdapters: '$(System.DefaultWorkingDirectory)\GTestAdapter\x64'
 
 
 - task: PublishTestResults@2
