@@ -35,3 +35,7 @@ steps:
     codeCoverageEnabled: true
 
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '**/TEST-*.xml'
