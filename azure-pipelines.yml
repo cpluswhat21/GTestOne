@@ -32,3 +32,8 @@ steps:
       !**\*TestAdapter.exe
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
+    
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'XUnit'
+    testResultsFiles: '**/TEST-*.xml'
