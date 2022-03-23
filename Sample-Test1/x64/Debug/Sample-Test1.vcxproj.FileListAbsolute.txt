@@ -1,1 +1,2 @@
 C:\Users\jhorns\source\repos\Sample-Test1\Sample-Test1\x64\Debug\Sample-Test1.vcxproj.CopyComplete
+C:\Users\jhorns\source\repos\GTestOne\Sample-Test1\x64\Debug\Sample-Test1.vcxproj.CopyComplete
